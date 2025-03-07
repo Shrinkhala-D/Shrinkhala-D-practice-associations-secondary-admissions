@@ -1,3 +1,16 @@
 {
-  "files": {}
+  "files": {
+    "user-elsie_horne-copd_snomed.csv": {
+      "id": "user/elsie_horne/copd_snomed/419c1000",
+      "url": "https://www.opencodelists.org/codelist/user/elsie_horne/copd_snomed/419c1000/",
+      "downloaded_at": "2025-03-05 19:07:33.112933Z",
+      "sha": "8621c69b3c52fd62b4ed4811411037eb9a2c9bb1"
+    },
+    "user-elsie_horne-copd_icd10.csv": {
+      "id": "user/elsie_horne/copd_icd10/5aab8335",
+      "url": "https://www.opencodelists.org/codelist/user/elsie_horne/copd_icd10/5aab8335/",
+      "downloaded_at": "2025-03-05 19:07:33.184727Z",
+      "sha": "06a1624b3719e3185010fa65aa7322d9176f914c"
+    }
+  }
 }

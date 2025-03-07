@@ -1,0 +1,2 @@
+user/elsie_horne/copd_snomed/419c1000
+user/elsie_horne/copd_icd10/5aab8335
