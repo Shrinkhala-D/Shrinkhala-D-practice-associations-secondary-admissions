@@ -17,7 +17,7 @@ from ehrql.tables.tpp import (
 )
 
 ##Defining the date variables
-exposure_start_date = date(2017, 10, 1)  #"2017-10-01" 
-cohort_start_date = date(2018, 10, 1)    #"2018-10-01"
-cohort_end_date = date(2020, 2, 28)     #"2020-02-28"
+exposure_start_date1 = date(2017, 10, 1)       #"2017-10-01" 
+cohort_start_date1 = date(2018, 10, 1)      #"2018-10-01"
+cohort_end_date1 = date(2020, 2, 28)        #"2020-02-28"
 

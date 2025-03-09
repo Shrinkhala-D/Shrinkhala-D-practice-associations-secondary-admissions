@@ -1,4 +1,4 @@
-##Creating a variable that is the proportion of age across all practices....
+
 
 df <- data.frame()
 library('tidyverse')
@@ -8,6 +8,15 @@ df_input <- read_csv(
   col_types = cols(patient_id = col_integer(),age = col_double())
 )
 
+
+#First, transform the measures data so it's one row PER PRACTICE
+
+#Then, merge the practice-level vars from the main dataset into the measures data?
+
+#Do a plot....
+
+
+#Plots - old code
 plot_age <- ggplot(data=df_input, aes(df_input$age)) + geom_histogram()
 
 ggsave(

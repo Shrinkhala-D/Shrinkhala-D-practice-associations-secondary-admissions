@@ -26,3 +26,21 @@ copd_icd10 = codelist_from_csv(
     #system="icd10",
     column="code"
 )
+
+hypertension_snomed = codelist_from_csv(
+    "codelists/nhsd-primary-care-domain-refsets-hyp_cod.csv",
+    column="code"
+)
+
+hypertension_icd10 = codelist_from_csv(
+    "codelists/user-elsie_horne-hypertension_icd10.csv",
+    column="code"
+)
+
+hypertension_drugs = codelist_from_csv(
+    "codelists/user-elsie_horne-hypertension_drugs_dmd.csv",
+    column="code"
+)
+
+
+
