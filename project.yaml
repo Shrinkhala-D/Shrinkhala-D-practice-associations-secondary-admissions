@@ -7,19 +7,24 @@ actions:
       highly_sensitive:
         dataset: output/dataset.csv.gz
 
-  generate_measures:
-    run: ehrql:v1 generate-measures analysis/default_measures.py --output output/example_measure1.csv.gz
-    needs: 
-    - generate_dataset
+  generate_measures_exposures:
+    run: ehrql:v1 generate-measures analysis/measures_exposures.py --output output/measures_exposures.csv.gz
     outputs:
       highly_sensitive:
-        dataset: output/example_measure1.csv.gz
+        dataset: output/measures_exposures.csv.gz
 
-  #merge_dataset:
-  #  run: r:latest analysis/test.R
-  #  needs: [generate_dataset, generate_measures]
-  #  outputs:
-  #     highly_sensitive:
-  #      dataset: output/merged_data.csv
+  generate_measures_outcomes:
+    run: ehrql:v1 generate-measures analysis/measures_outcomes.py --output output/measures_outcomes.csv.gz
+    outputs:
+      highly_sensitive:
+        dataset: output/measures_outcomes.csv.gz
+
+  merge_dataset:
+    run: r:latest analysis/test.R
+    needs: [generate_dataset, generate_measures_exposures]
+    outputs:
+      highly_sensitive:
+        dataset: output/merged_data.csv
 
 
+ #Not generating a dataset for now because we're just using the measures framework

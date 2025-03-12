@@ -97,20 +97,6 @@ measures.define_measure(
 )   
 
 
-##OUTCOME - weekly rate of A&E attendances, per practice
-#First, identify everyone with an A&E admission in the time frame
-
-
-measures.define_measure(
-    name="ae_count_w",
-    numerator = ae_count, 
-    denominator = was_registered & was_alive,
-    group_by = {
-        "practice_id": practice_registrations.for_patient_on(cohort_start_date1).practice_pseudo_id
-    },
-    intervals = weeks(20).starting_on(cohort_start_date1)
-)
-
 #measures.define_measure(
 #    name="female_count_w",
 #    numerator = is_female,
