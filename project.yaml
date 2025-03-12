@@ -15,6 +15,11 @@ actions:
       highly_sensitive:
         dataset: output/example_measure1.csv.gz
 
+  #merge_dataset:
+  #  run: r:latest analysis/test.R
+  #  needs: [generate_dataset, generate_measures]
+  #  outputs:
+  #     highly_sensitive:
+  #      dataset: output/merged_data.csv
 
-#TO DO 
-# merge_dataset: - action that runs R script to merge datasets
+

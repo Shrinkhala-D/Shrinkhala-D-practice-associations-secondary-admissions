@@ -1,18 +1,23 @@
-##CODELISTS
-from ehrql import (
-    create_dataset, 
-    create_measures,
-    codelist_from_csv,
-    when, 
-    years,
-    months,
-    weeks,
-    days, 
-    minimum_of, 
-    case, 
-    show,
-    INTERVAL, 
-    )
+####################################################################
+##Importing key modules, TPP tables, previously defined variables
+####################################################################
+from module_table_imports import *
+
+##Importing in the dates we defined in "dates.py"
+from analysis.dates import (
+    exposure_start_date1,
+    cohort_start_date1, 
+    cohort_end_date1,
+)
+
+##Importing in the variables we defined in "variables.py"
+from variables import *
+
+
+####################################################################
+##Uploading the codelists from the .csv files
+####################################################################
+#Note: We previously already imported the .csv files using code in the opensafely terminal
 
 
 copd_snomed_clinical = codelist_from_csv(

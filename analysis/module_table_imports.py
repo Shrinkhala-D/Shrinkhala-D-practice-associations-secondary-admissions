@@ -1,5 +1,5 @@
 ####################################################################
-##Importing key modules, TPP tables, previously defined variables
+##Importing key modules, TPP tables
 ####################################################################
 
 from ehrql import (
