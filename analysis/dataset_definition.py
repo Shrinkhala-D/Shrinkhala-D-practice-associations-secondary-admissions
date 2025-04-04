@@ -62,28 +62,30 @@ for i in range (0,20):
 
 
 
-##Pass this dataset through to STATA
-##Then create proportion variables 
 
 
-##################################################################
-## Cambridge Multi-Morbidity
-##################################################################
 
-
-#Per person: apply the coefficient to each diagnosed ID
 ##################################################################
 ## OPENSAFELY TERMINAL EDITOR
 ##################################################################
 
-##Adding/updating codelists after listing them in the codelists.txt file
-#opensafely codelists update
+###Adding/updating codelists after listing them in the codelists.txt file
+#Manually adding a codelist from OPENCODELISTS to your project, using the OS terminal, then uploading/updating them
+    # opensafely codelists add https://www.opencodelists.org/codelist/opensafely/covid-identification/2020-06-03/
+        #^^will add the codelist to your codelists.txt file and also as a .csv in the research project
+    # opensafely codelists update
+        #Updates the codelists in your repo
 
-#Measures framework
+
+###Measures framework
 #opensafely exec ehrql:v1 generate-measures analysis/default_measures.py --output example_measure1.csv
 
-#Regular data
+
+###Regular data
 #opensafely exec ehrql:v1 generate-dataset analysis/dataset_definition.py --output example_data1.csv
+
+
+
 
 ##################################################################
 ## YAML
